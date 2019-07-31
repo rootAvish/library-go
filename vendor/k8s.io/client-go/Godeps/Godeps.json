@@ -171,12 +171,36 @@
 			"Rev": "94122c33edd36123c84d5368cfb2b69df93a0ec8"
 		},
 		{
+			"ImportPath": "github.com/opentracing/opentracing-go",
+			"Comment": "v1.1.0-1-g135aa78",
+			"Rev": "135aa78c6f95b4a199daf2f0470d231136cbbd0c"
+		},
+		{
+			"ImportPath": "github.com/opentracing/opentracing-go/ext",
+			"Comment": "v1.1.0-1-g135aa78",
+			"Rev": "135aa78c6f95b4a199daf2f0470d231136cbbd0c"
+		},
+		{
+			"ImportPath": "github.com/opentracing/opentracing-go/log",
+			"Comment": "v1.1.0-1-g135aa78",
+			"Rev": "135aa78c6f95b4a199daf2f0470d231136cbbd0c"
+		},
+		{
 			"ImportPath": "github.com/peterbourgon/diskv",
 			"Rev": "5f041e8faa004a95c88a202771f4cc3e991971e6"
 		},
 		{
+			"ImportPath": "github.com/pkg/errors",
+			"Comment": "v0.8.1-24-g27936f6",
+			"Rev": "27936f6d90f9c8e1145f11ed52ffffbfdb9e0af7"
+		},
+		{
 			"ImportPath": "github.com/pmezard/go-difflib/difflib",
 			"Rev": "5d4384ee4fb2527b0a1256a821ebfc92f91efefc"
+		},
+		{
+			"ImportPath": "github.com/rootavish/tracing",
+			"Rev": "7f12097f5a8ba0aee72efad289deb0a81dd599ce"
 		},
 		{
 			"ImportPath": "github.com/spf13/pflag",
@@ -185,6 +209,96 @@
 		{
 			"ImportPath": "github.com/stretchr/testify/assert",
 			"Rev": "c679ae2cc0cb27ec3293fea7e254e47386f05d69"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/config",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/internal/baggage",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/internal/baggage/remote",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/internal/spanlog",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/internal/throttler",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/internal/throttler/remote",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/log",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/rpcmetrics",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/thrift",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/thrift-gen/agent",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/thrift-gen/baggage",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/thrift-gen/jaeger",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/thrift-gen/sampling",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/thrift-gen/zipkincore",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/transport",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-client-go/utils",
+			"Comment": "v2.16.0-5-ge895c7a",
+			"Rev": "e895c7a19f047619c4f79fad2c9eba3a3718d325"
+		},
+		{
+			"ImportPath": "github.com/uber/jaeger-lib/metrics",
+			"Comment": "v2.0.0-1-gd036253",
+			"Rev": "d036253de8f5b698150d81b922486f1e8e7628ec"
 		},
 		{
 			"ImportPath": "golang.org/x/crypto/ssh/terminal",

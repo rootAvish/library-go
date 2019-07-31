@@ -12,6 +12,7 @@ import:
   version: kubernetes-1.14.0
 - package: k8s.io/client-go
   version: kubernetes-1.14.0
+  repo: https://github.com/rootAvish/kubernetes-client-go.git
 - package: github.com/openshift/api
   version: master
 - package: github.com/openshift/client-go

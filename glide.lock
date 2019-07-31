@@ -1,5 +1,5 @@
-hash: 14182a87b2489ea8cd2db705bf09aad592752d9c9f7cc6cc840a76bcb179a2e8
-updated: 2019-07-14T22:28:29.452706+02:00
+hash: 3d7e641803c9112e7d91c300353e848e4a88906f2220a4361479a4063beef42f
+updated: 2019-08-01T01:50:45.568212+05:30
 imports:
 - name: bitbucket.org/ww/goautoneg
   version: 75cd24fc2f2c2a2088577d12123ddee5f54e0675
@@ -159,7 +159,7 @@ imports:
 - name: github.com/docker/go-units
   version: 519db1ee28dcc9fd2474ae59fca29a810482bfb1
 - name: github.com/docker/libnetwork
-  version: 14f9d751adc2d51b38d14b4e14419b76466d3b94
+  version: 09cdcc8c0eab3946c2d70e8f6225b05baf1e90d1
   subpackages:
   - ipamutils
 - name: github.com/docker/libtrust
@@ -169,7 +169,7 @@ imports:
   subpackages:
   - log
 - name: github.com/evanphx/json-patch
-  version: 5858425f75500d40c52783dce87d085a483ce135
+  version: 026c730a0dcc5d11f93f1cf1cc65b01247ea7b6f
 - name: github.com/fsouza/go-dockerclient
   version: da3951ba2e9e02bc0e7642150b3e265aed7e1df3
 - name: github.com/getsentry/raven-go
@@ -251,7 +251,7 @@ imports:
   - compiler
   - extensions
 - name: github.com/gorilla/mux
-  version: d83b6ffe499a29cc05fc977988d0392851779620
+  version: e67b3c02c7195c052acff13261f0c9fd1ba53011
 - name: github.com/grpc-ecosystem/go-grpc-prometheus
   version: 2500245aa6110c562d17020fb31a2c133d737799
 - name: github.com/hashicorp/golang-lru
@@ -281,7 +281,7 @@ imports:
   subpackages:
   - pbutil
 - name: github.com/Microsoft/go-winio
-  version: 881e3d46423d592d11da9873ff6581dc577a1d0f
+  version: a969fb018bd3439cc50861ce06796c40430e3a65
   subpackages:
   - pkg/guid
 - name: github.com/modern-go/concurrent
@@ -302,12 +302,12 @@ imports:
   - specs-go
   - specs-go/v1
 - name: github.com/opencontainers/runc
-  version: 6cccc1760d57d9e1bc856b96eeb7ee02b7b8101d
+  version: 80d35c7ce445a595e5139a0939d2cd37eb200525
   subpackages:
   - libcontainer/system
   - libcontainer/user
 - name: github.com/openshift/api
-  version: f15120709e0ac8de84e11616d8f0cac54e8f52e3
+  version: 0922aa5a655be314e20a3e0e94f4f2b105100154
   subpackages:
   - apps
   - apps/v1
@@ -354,7 +354,7 @@ imports:
   - webconsole
   - webconsole/v1
 - name: github.com/openshift/client-go
-  version: c44a8b61b9f46cd9e802384dfeda0bc9942db68a
+  version: a85ea6a6b3a5d2dbe41582ee35695dd4683e1f02
   subpackages:
   - apps/clientset/versioned/scheme
   - apps/clientset/versioned/typed/apps/v1
@@ -381,6 +381,11 @@ imports:
   - route/clientset/versioned/scheme
   - route/clientset/versioned/typed/route/v1
   - route/clientset/versioned/typed/route/v1/fake
+- name: github.com/opentracing/opentracing-go
+  version: 135aa78c6f95b4a199daf2f0470d231136cbbd0c
+  subpackages:
+  - ext
+  - log
 - name: github.com/pborman/uuid
   version: ca53cad383cad2479bbba7f7a1a05797ec1386e4
 - name: github.com/pkg/errors
@@ -412,11 +417,13 @@ imports:
 - name: github.com/PuerkitoBio/urlesc
   version: 5bd2802263f21d8788851d5305584c82a5c75d7e
 - name: github.com/rogpeppe/go-internal
-  version: 6f68bf1e81f8552c7dbd47f3bc4371c2db0941a6
+  version: 3670dca80da881cddd5377fb9496daaabb8dec9f
   subpackages:
   - modfile
   - module
   - semver
+- name: github.com/rootavish/tracing
+  version: 7f12097f5a8ba0aee72efad289deb0a81dd599ce
 - name: github.com/sigma/go-inotify
   version: c87b6cf5033d2c6486046f045eeebdc3d910fd38
 - name: github.com/sirupsen/logrus
@@ -429,6 +436,29 @@ imports:
   version: c439c4fa093711d42e1b01acb1235b52004753c1
 - name: github.com/spf13/pflag
   version: 583c0c0531f06d5278b7d917446061adc344b5cd
+- name: github.com/uber/jaeger-client-go
+  version: e895c7a19f047619c4f79fad2c9eba3a3718d325
+  subpackages:
+  - config
+  - internal/baggage
+  - internal/baggage/remote
+  - internal/spanlog
+  - internal/throttler
+  - internal/throttler/remote
+  - log
+  - rpcmetrics
+  - thrift
+  - thrift-gen/agent
+  - thrift-gen/baggage
+  - thrift-gen/jaeger
+  - thrift-gen/sampling
+  - thrift-gen/zipkincore
+  - transport
+  - utils
+- name: github.com/uber/jaeger-lib
+  version: d036253de8f5b698150d81b922486f1e8e7628ec
+  subpackages:
+  - metrics
 - name: golang.org/x/crypto
   version: de0752318171da717af4ce24d0a2e8626afaeb11
   subpackages:
@@ -732,11 +762,14 @@ imports:
   - plugin/pkg/authenticator/token/webhook
   - plugin/pkg/authorizer/webhook
 - name: k8s.io/client-go
-  version: 6ee68ca5fd8355d024d02f9db0b3b667e8357a0f
+  version: 9a251428d3942c55772bbad7be97ab7298019e09
+  repo: https://github.com/rootAvish/kubernetes-client-go.git
   subpackages:
   - discovery
   - discovery/fake
   - dynamic
+  - dynamic/dynamicinformer
+  - dynamic/dynamiclister
   - dynamic/fake
   - informers
   - informers/admissionregistration
@@ -973,6 +1006,8 @@ imports:
   version: c2654d5206da6b7b6ace12841e8f359bb89b443c
   subpackages:
   - buffer
+  - diff
+  - field
   - integer
   - trace
 - name: sigs.k8s.io/controller-tools
